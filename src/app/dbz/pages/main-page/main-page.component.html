@@ -2,11 +2,7 @@
 <hr>
 <div class="row">
   <div class="col">
-    <h3>Personajes</h3>
-    <hr>
-    <ul>
-      <li *ngFor="let item of lista">{{ item.nombre }} - {{ item.poder | number }} HP</li>
-    </ul>
+    <app-personaje [personajes]=lista></app-personaje>
   </div>
 
   <div class="col">

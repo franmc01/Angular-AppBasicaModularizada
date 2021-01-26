@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Personaje {
-  nombre: string,
-  poder: number
-}
+import { Personaje } from '../../models/personaje.model';
 
 @Component({
   selector: 'app-main-page',

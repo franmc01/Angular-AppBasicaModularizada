@@ -5,9 +5,7 @@
     <h3>Personajes</h3>
     <hr>
     <ul>
-      <li>Goku - 15000</li>
-      <li>Vegeta - 14000</li>
-      <li>Krillin - 700</li>
+      <li *ngFor="let item of lista">{{ item.nombre }} - {{ item.poder | number }} HP</li>
     </ul>
   </div>
 
@@ -15,9 +13,9 @@
     <h3>Agregar</h3>
     <hr>
     <form (ngSubmit)="Agregar()">
-      <input type="text" placeholder="Nombre personaje">
-      <input type="number" placeholder="Poder">
-      <button>Agregar</button>
+      <input type="text" name="nombres" [(ngModel)]="nuevoPersonaje.nombre" placeholder="Nombre personaje">
+      <input type="number" name="poderes" [(ngModel)]="nuevoPersonaje.poder" placeholder="Poder">
+      <button type="submit">Agregar</button>
     </form>
   </div>
 </div>

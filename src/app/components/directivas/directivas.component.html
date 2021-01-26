@@ -1,0 +1,12 @@
+<p>Directivas works!</p>
+
+<h3 *ngIf="borrado; else noBorrado ">Heroe borrado: <small>{{ borrado }}</small></h3>
+
+<ng-template #noBorrado>
+  <h3>No ha borrado nada</h3>
+</ng-template>
+
+<button (click)="borrarElemento()">Borrar</button>
+<ul>
+  <li *ngFor="let item of heroes; let i = index">{{ i + 1 }} - {{ item }}</li>
+</ul>

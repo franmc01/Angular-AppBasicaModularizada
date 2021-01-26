@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DirectivasComponent } from './components/directivas/directivas.component';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { DirectivasComponent } from './components/directivas/directivas.componen
     DirectivasComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]

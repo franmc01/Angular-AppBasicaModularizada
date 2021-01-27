@@ -26,22 +26,13 @@ export class MainPageComponent {
       poder: 10000
     }
   ];
-  nuevoPersonaje: Personaje = {
-    nombre: '',
-    poder: 0
+
+  nuevo:Personaje={
+    nombre: "Bulma",
+    poder: 100
   }
 
-  Agregar() {
-    if (this.nuevoPersonaje.nombre.trim().length === 0) {
-      return;
-    }
-    console.log(this.nuevoPersonaje);
-    this.lista.push(this.nuevoPersonaje);
-    this.nuevoPersonaje = {
-      nombre: '',
-      poder:0
-    }
-
+  agregarNuevoPersonaje(eventPer:Personaje){
+    this.lista.push(eventPer);
   }
-
 }

@@ -8,31 +8,9 @@ import { Personaje } from '../../models/personaje.model';
 })
 export class MainPageComponent {
 
-  lista:Personaje[] = [
-    {
-      nombre:'Goku',
-      poder: 100000
-    },
-    {
-      nombre:'Bills',
-      poder: 2000000
-    },
-    {
-      nombre:'Vegeta',
-      poder: 40000
-    },
-    {
-      nombre:'Krilin',
-      poder: 10000
-    }
-  ];
-
   nuevo:Personaje={
     nombre: "Bulma",
     poder: 100
   }
 
-  agregarNuevoPersonaje(eventPer:Personaje){
-    this.lista.push(eventPer);
-  }
 }
